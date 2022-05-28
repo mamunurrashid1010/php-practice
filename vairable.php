@@ -10,9 +10,9 @@
     <?php
 
         # variable declaration with value
-        $txt = "Hello world!";
-        $x = 10;
-        $y = 5.5;
+        $txt = "Hello world!";  //string value
+        $x = 10;                //integer value
+        $y = 5.5;               //float value
 
         # print
         echo $txt;
