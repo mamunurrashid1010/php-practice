@@ -21,8 +21,11 @@
         print "I'm about to learn PHP!<br>";
         print "-----------------------------------";
 
-        
-
+        # print string type variable
+        echo "<h3>This is the example of string variable print</h3>";
+        $text1="Hello";
+        $text2="World!";
+        echo $text1." ".$text2;
     ?>
 
 </body>
