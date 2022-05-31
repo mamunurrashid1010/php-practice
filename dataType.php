@@ -16,9 +16,7 @@
             Float (floating point numbers - also called double)
             Boolean
             Array
-            Object
             NULL
-            Resource
          */
         echo "<h4>String Data type:</h4>";
         $string="This is string data type.";
@@ -38,6 +36,13 @@
         var_dump($x) ;
         var_dump($y) ;
 
+        echo "<h4>Array Data type:</h4>";
+        $array= array('a','b','c');
+        var_dump($array) ;
+
+        echo "<h4>Null Data type:</h4>";
+        $null= null;
+        var_dump($null) ;
     ?>
 
 </body>
