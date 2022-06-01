@@ -15,6 +15,7 @@
             2. str_word_count()
             3. strrev()
             4. strpos()
+            5. str_replace()
          */
 
         # string length
@@ -36,6 +37,11 @@
         echo "<h4>Text find:</h4>";
         $string="Hello World";
         echo $string."<br>".strpos($string,'World');
+
+        # str_replace() function replaces some characters with some other characters in a string.
+        echo "<h4>Replace text :</h4>";
+        $string="Hello World";
+        echo $string."<br>".str_replace('World','mamun',$string);
     ?>
 
 </body>
