@@ -14,6 +14,7 @@
             1. strlen()
             2. str_word_count()
             3. strrev()
+            4. strpos()
          */
 
         # string length
@@ -24,12 +25,17 @@
         # string word count
         echo "<h4>String word count:</h4>";
         $string="Hello World";
-        echo $string."<br>Length: ".str_word_count($string);
+        echo $string."<br>Count: ".str_word_count($string);
 
         # string reverse
         echo "<h4>String reverse:</h4>";
         $string="Hello World";
         echo $string."<br>Length: ".strrev($string);
+
+        # The PHP strpos() function searches for a specific text within a string. If a match is found, the function returns the character position of the first match. If no match is found, it will return FALSE.
+        echo "<h4>Text find:</h4>";
+        $string="Hello World";
+        echo $string."<br>".strpos($string,'World');
     ?>
 
 </body>
