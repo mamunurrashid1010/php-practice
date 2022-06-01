@@ -13,6 +13,7 @@
          * string manipulate function:
             1. strlen()
             2. str_word_count()
+            3. strrev()
          */
 
         # string length
@@ -25,6 +26,10 @@
         $string="Hello World";
         echo $string."<br>Length: ".str_word_count($string);
 
+        # string reverse
+        echo "<h4>String reverse:</h4>";
+        $string="Hello World";
+        echo $string."<br>Length: ".strrev($string);
     ?>
 
 </body>
