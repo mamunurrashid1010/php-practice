@@ -27,6 +27,13 @@
         echo $number1."<br>round is: ".round($number1)."<br>";
         echo $number2."<br>round is: ".round($number2);
 
+        # Min, max function
+        echo "<h4>min and max function:</h4>";
+        $number=[1,5,6,8,10];
+        echo "[1,5,6,8,10]";
+        echo "<br>min value is: ".min($number)."<br>";
+        echo "<br>max value is: ".max($number)."<br>";
+
     ?>
 
 </body>
