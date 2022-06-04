@@ -12,6 +12,9 @@
          * This is example of php different math function.
             1. sqrt()
             2. round()
+            3. min(), max()
+            4. abs()
+            5. rand()
          */
 
         # sqrt function
@@ -33,6 +36,19 @@
         echo "[1,5,6,8,10]";
         echo "<br>min value is: ".min($number)."<br>";
         echo "<br>max value is: ".max($number)."<br>";
+
+        # abs function
+        echo "<h4>abs function:</h4>";
+        echo "<h5>return absolute value(positive) of a number:</h5>";
+        $number=-5.5;
+        echo $number."absolute value(positive) is:".abs($number);
+
+        # rand function
+        echo "<h4>rand function:</h4>";
+        echo "<h5>generate random value:</h5>";
+        $number=-5.5;
+        echo rand()."<br>";
+        echo rand(10,100);
 
     ?>
 
