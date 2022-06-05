@@ -53,6 +53,51 @@
         $number2=2;
         echo "The Exponentiation of " .$number1 ." and ".$number2 ." is: " .($number1**$number2);
 
+
+        # Comparison Operators example
+        echo "<h4>Comparison operators example:</h4>";
+        echo "<h5>Equal(==):</h5>";
+        $number1=10;
+        $number2=10;
+        echo $number1 ." and ".$number2." are equal: ";
+        var_dump($number1==$number2);
+
+        echo "<h5>Identical(===):</h5>";
+        $number1=10;
+        $number2=10.5;
+        echo $number1 ." and ".$number2." are equal and same data type: ";
+        var_dump($number1===$number2);
+
+        echo "<h5>Not equal(!=):</h5>";
+        $number1=10;
+        $number2=20;
+        echo $number1 ." and ".$number2." are not equal: ";
+        var_dump($number1!=$number2);
+
+        echo "<h5>Greater than(>):</h5>";
+        $number1=10;
+        $number2=20;
+        echo $number1 ." is greater than  ".$number2. " : ";
+        var_dump($number1>$number2);
+
+        echo "<h5>Less than(<):</h5>";
+        $number1=10;
+        $number2=20;
+        echo $number1 ." is less than  ".$number2. " : ";
+        var_dump($number1<$number2);
+
+        echo "<h5>Greater than or equal to(>=):</h5>";
+        $number1=10;
+        $number2=20;
+        echo $number1 ." Greater than or equal to  ".$number2. " : ";
+        var_dump($number1>=$number2);
+
+        echo "<h5>Less than or equal to(<=):</h5>";
+        $number1=10;
+        $number2=20;
+        echo $number1 ." Less than or equal to  ".$number2. " : ";
+        var_dump($number1<=$number2)
+
     ?>
 
 </body>
