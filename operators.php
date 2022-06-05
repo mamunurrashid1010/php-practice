@@ -96,7 +96,44 @@
         $number1=10;
         $number2=20;
         echo $number1 ." Less than or equal to  ".$number2. " : ";
-        var_dump($number1<=$number2)
+        var_dump($number1<=$number2);
+
+
+        # Increment / Decrement Operators example
+        echo "<h4>Increment / Decrement operators example:</h4>";
+        echo "<h5>Increment(++):</h5>";
+        $x=10;
+        echo ++$x;
+
+        echo "<h5>Decrement(--):</h5>";
+        $x=10;
+        echo --$x;
+
+
+        # Logical Operators example
+        echo "<h4>Logical operators example:</h4>";
+        echo "<h5>And(&&):</h5>";
+        $number1=10;
+        $number2=20;
+        if ($number1 ==10 && $number2==20)
+            echo "block-1";
+        else
+            echo "block-2";
+
+        echo "<h5>Or(||):</h5>";
+        $number1=10;
+        $number2=20;
+        if ($number1 ==10 || $number2==50)
+            echo "block-1";
+        else
+            echo "block-2";
+
+        echo "<h5>Not(!):</h5>";
+        $number1=10;
+        if ($number1 !==10 )
+            echo "block-1";
+        else
+            echo "block-2";
 
     ?>
 
