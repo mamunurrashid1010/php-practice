@@ -35,6 +35,13 @@
             echo $i."<br>";
         }
 
+        # foreach loop
+        echo "<h4>foreach loop:</h4>";
+        $colors = ["red", "green", "blue", "yellow"];
+        foreach ($colors as $key=>$color) {
+            echo "position $key value is: $color <br>";
+        }
+
     ?>
 
 </body>
