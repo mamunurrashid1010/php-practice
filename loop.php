@@ -26,7 +26,15 @@
         $x=10;
         do{
             echo $x."<br>";
-        }while($x<5)
+        }while($x<5);
+
+        # for loop
+        echo "<h4>for loop:</h4>";
+        $i=1;
+        for ($i=1; $i<=5; $i++){
+            echo $i."<br>";
+        }
+
     ?>
 
 </body>
