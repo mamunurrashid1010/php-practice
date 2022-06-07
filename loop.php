@@ -13,7 +13,7 @@
             1. while loop
          */
 
-        # syntax
+        # while loop
         echo "<h4>While loop:</h4>";
         $x=1;
         while ($x<=5){
@@ -21,6 +21,12 @@
             $x++;
         }
 
+        # do while loop
+        echo "<h4>do while loop:</h4>";
+        $x=10;
+        do{
+            echo $x."<br>";
+        }while($x<5)
     ?>
 
 </body>
