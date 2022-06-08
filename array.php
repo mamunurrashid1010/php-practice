@@ -33,8 +33,17 @@
             echo count($studentName);
         }
 
+        # array value print using loop
+        function printValue($studentName){
+            echo "<h4>array value print using loop:</h4>";
+            foreach($studentName as $name){
+                echo $name."<br>";
+            }
+        }
+
         arrayExample($studentName);
         length($studentName);
+        printValue($studentName);
 
     ?>
 
