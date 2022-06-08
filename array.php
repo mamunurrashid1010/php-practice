@@ -41,9 +41,20 @@
             }
         }
 
+        # associative array
+        function associativeArray(){
+            echo "<h4>associative array:</h4>";
+            $countryCode=array('bangladesh'=>100,'india'=>200,'pakistan'=>300,'nepal'=>400,'america'=>500);
+            foreach ($countryCode as $key=>$cCode){
+                echo $key."= ".$cCode."<br>";
+            }
+        }
+
+
         arrayExample($studentName);
         length($studentName);
         printValue($studentName);
+        associativeArray();
 
     ?>
 
