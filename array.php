@@ -17,12 +17,24 @@
          */
 
         # array example
-        echo "<h4>array example:</h4>";
         $studentName=array('hasan','emon','rony','kamal','jamal');
-        echo $studentName[0]."<br>";
-        echo $studentName[1]."<br>";
-        echo $studentName[3]."<br>";
 
+        # array print
+        function arrayExample($studentName){
+            echo "<h4>array example:</h4>";
+            echo $studentName[0]."<br>";
+            echo $studentName[1]."<br>";
+            echo $studentName[3]."<br>";
+        }
+
+        # array length count
+        function length($studentName){
+            echo "<h4>array Length:</h4>";
+            echo count($studentName);
+        }
+
+        arrayExample($studentName);
+        length($studentName);
 
     ?>
 
