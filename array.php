@@ -50,11 +50,31 @@
             }
         }
 
+        # multidimensional array
+        function multidimensionalArray(){
+            echo "<h4>multidimensional array:</h4>";
+            $bikeStock=array(
+                    array('Hornet',20),
+                    array('Gixxer',10),
+                    array('Fz',5),
+            );
+
+            for($row=0;$row<count($bikeStock);$row++){
+                echo "<p><b>Row number: $row</b></p>";
+                echo "<ul>";
+                for($col=0;$col<count($bikeStock[$row]);$col++){
+                    echo "<li>".$bikeStock[$row][$col]."</li>";
+                }
+                echo "</ul>";
+            }
+        }
+
 
         arrayExample($studentName);
         length($studentName);
         printValue($studentName);
         associativeArray();
+        multidimensionalArray();
 
     ?>
 
