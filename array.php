@@ -89,6 +89,16 @@
             print_r($result);
         }
 
+        # associative array sorting to ascending order, according to the value.
+        # asort() is a building function
+        function associativeArraySortToAscending(){
+            echo "<h4>Associative array sorting to ascending order, according to the value:</h4>";
+            $result=['val1'=>5,'val2'=>3,'val3'=>1,'val4'=>4,'val5'=>2];
+            asort($result);
+            echo "<pre>";
+            print_r($result);
+        }
+
         arrayExample($studentName);
         length($studentName);
         printValue($studentName);
@@ -96,6 +106,7 @@
         multidimensionalArray();
         arraySortToAscending();
         arraySortToDescending();
+        associativeArraySortToAscending();
 
     ?>
 
