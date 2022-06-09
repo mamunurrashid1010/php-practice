@@ -99,6 +99,16 @@
             print_r($result);
         }
 
+        # associative array sorting to descending order, according to the value.
+        # arsort() is a building function
+        function associativeArraySortToDescending(){
+            echo "<h4>Associative array sorting to descending order, according to the value:</h4>";
+            $result=['val1'=>5,'val2'=>3,'val3'=>1,'val4'=>4,'val5'=>2];
+            arsort($result);
+            echo "<pre>";
+            print_r($result);
+        }
+
         arrayExample($studentName);
         length($studentName);
         printValue($studentName);
@@ -107,6 +117,7 @@
         arraySortToAscending();
         arraySortToDescending();
         associativeArraySortToAscending();
+        associativeArraySortToDescending();
 
     ?>
 
