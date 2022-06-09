@@ -99,6 +99,16 @@
             print_r($result);
         }
 
+        # associative array sorting to ascending order, according to the key.
+        # ksort() is a building function
+        function associativeArrayKeySortToAscending(){
+            echo "<h4>Associative array sorting to ascending order, according to the key:</h4>";
+            $result=['val5'=>5,'val3'=>3,'val2'=>1,'val4'=>4,'val1'=>2];
+            ksort($result);
+            echo "<pre>";
+            print_r($result);
+        }
+
         # associative array sorting to descending order, according to the value.
         # arsort() is a building function
         function associativeArraySortToDescending(){
@@ -117,6 +127,8 @@
         arraySortToAscending();
         arraySortToDescending();
         associativeArraySortToAscending();
+        associativeArrayKeySortToAscending();
+        
         associativeArraySortToDescending();
 
     ?>
