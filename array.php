@@ -69,12 +69,22 @@
             }
         }
 
+        # array sorting to ascending order
+        # sort() is a building function
+        function arraySortToAscending(){
+            echo "<h4>Array sorting to ascending order:</h4>";
+            $result=[5,1,3,2,4];
+            sort($result);
+            echo "<pre>";
+            print_r($result);
+        }
 
         arrayExample($studentName);
         length($studentName);
         printValue($studentName);
         associativeArray();
         multidimensionalArray();
+        arraySortToAscending();
 
     ?>
 
