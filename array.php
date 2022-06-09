@@ -79,12 +79,23 @@
             print_r($result);
         }
 
+        # array sorting to descending order
+        # rsort() is a building function
+        function arraySortToDescending(){
+            echo "<h4>Array sorting to descending order:</h4>";
+            $result=[5,1,3,2,4];
+            rsort($result);
+            echo "<pre>";
+            print_r($result);
+        }
+
         arrayExample($studentName);
         length($studentName);
         printValue($studentName);
         associativeArray();
         multidimensionalArray();
         arraySortToAscending();
+        arraySortToDescending();
 
     ?>
 
