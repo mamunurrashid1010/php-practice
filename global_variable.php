@@ -22,7 +22,14 @@
             $_SESSION
          */
 
-      
+        # globals variable example
+        $x=100;
+        $y=50;
+        function sum(){
+            $GLOBALS['result']=$GLOBALS['x']+$GLOBALS['y'];
+        }
+        sum();
+        echo $result;
 
 
     ?>
