@@ -63,5 +63,24 @@
     }
     ?>
 
+    <!-- $_POST example -->
+    <h4>Super global variable POST example:</h4>
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+        Name: <input type="text" name="fname">
+        mobile: <input type="number" name="mobile">
+        <input type="submit">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // collect value of input field
+        $name = $_POST['fname'];
+        $mobile = $_POST['mobile'];
+
+        echo $name."<br>";
+        echo $mobile;
+    }
+    ?>
+
 </body>
 </html>
