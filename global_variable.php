@@ -11,7 +11,7 @@
         /**
          * This is example of php global variable.
          * global variable are:
-            $GLOBALS
+            $ GLOBALS
             $_SERVER
             $_REQUEST
             $_POST
@@ -23,13 +23,21 @@
          */
 
         # globals variable example
+        echo "<h4>globals varaiable</h4>";
         $x=100;
         $y=50;
         function sum(){
             $GLOBALS['result']=$GLOBALS['x']+$GLOBALS['y'];
         }
         sum();
-        echo $result;
+        echo $result.'<br>';
+
+        # $_SERVER example
+        echo "<h4>Super global variable SERVER example:</h4>";
+        echo $_SERVER['SERVER_NAME']."<br>";
+        echo $_SERVER['HTTP_HOST']."<br>";
+        echo $_SERVER['HTTP_REFERER']."<br>";
+        echo $_SERVER['SERVER_PORT']."<br>";
 
 
     ?>
