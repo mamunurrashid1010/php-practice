@@ -82,5 +82,23 @@
     }
     ?>
 
+
+    <!-- $_GET example -->
+    <h4>Super global variable GET example:</h4>
+    <form method="get" action="<?php echo $_SERVER['PHP_SELF'];?>">
+        Demo: <input type="text" name="demoText">
+        <input type="submit">
+    </form>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "GET") {
+        // collect value of input field
+        $demoText = $_GET['demoText'];
+
+        echo $demoText;
+
+    }
+    ?>
+
 </body>
 </html>
