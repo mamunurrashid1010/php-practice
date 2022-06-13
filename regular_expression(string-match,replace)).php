@@ -26,7 +26,15 @@
         else
             echo "not found";
 
-
+        # preg_match() function example
+        echo "<h4>Regular Expression preg_match_all() example:</h4>";
+        $text="hello world, hello world, hello world";
+        $pattern="/world/i";
+        $count=preg_match_all($pattern,$text);
+        if($count)
+            echo "found: ".$count;
+        else
+            echo "not found";
 
 
     ?>
