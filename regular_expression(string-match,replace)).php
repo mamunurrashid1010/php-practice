@@ -37,6 +37,15 @@
             echo "not found";
 
 
+        # preg_replace() function example
+        echo "<h4>Regular Expression preg_replace() example:</h4>";
+        echo "<p>Replace a string in a text:</p>";
+        $myText="hello world";
+        $pattern="/world/i";
+        echo preg_replace($pattern,"mamun" ,$myText);
+
+
+
     ?>
 
 </body>
