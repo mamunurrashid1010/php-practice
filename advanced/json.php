@@ -10,3 +10,7 @@
     echo json_encode($studenInfo);
 
 
+    # decode json object to associative array example
+    echo "<h4>decode json object to associative array :</h4> <br>";
+    $jsonObj='{"Peter":35,"Ben":37,"Joe":43}';
+    print_r(json_decode($jsonObj));
