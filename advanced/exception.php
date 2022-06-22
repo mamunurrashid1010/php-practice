@@ -18,3 +18,10 @@
     }catch (Exception $e){
         echo "Unable to divide";
     }
+
+    # exception example-3
+    try{
+        echo divide(5, 0);
+    }finally{
+        echo "Unable to divide";
+    }
