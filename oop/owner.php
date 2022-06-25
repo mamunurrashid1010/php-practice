@@ -7,8 +7,14 @@ class owner{
     function __construct(){
         $this->ownerName="Mamunur Rashid";
     }
+
     function getOwnerName(){
         return $this->ownerName;
+    }
+
+    function __destruct()
+    {
+        $this->ownerName;
     }
 }
 
