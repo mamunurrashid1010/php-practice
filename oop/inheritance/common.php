@@ -12,6 +12,9 @@ class common{
     public function twoValueSub($a,$b){
         return $a-$b;
     }
+    public function twoValueMul($a,$b){
+        return $a*$b;
+    }
 }
 
 # child class inherit parent class
@@ -25,8 +28,13 @@ class math extends common{
         echo "Subtraction ($a-$b): ".$this->twoValueSub($a,$b);
         echo "<br>";
     }
+    public function multiplication($a,$b){
+        echo "Multiplication ($a*$b): ".$this->twoValueMul($a,$b);
+        echo "<br>";
+    }
 }
 
 $obj=new math();
 $obj->sum(10,20);
 $obj->subtraction(50,10);
+$obj->multiplication(10,10);
