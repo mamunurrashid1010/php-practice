@@ -19,9 +19,43 @@ class audi extends car{
     }
 }
 
+# child class
+class volvo extends car{
+    function carInfo(){
+        echo "<br>I'm from volvo child class<br>";
+    }
+}
+
+# child class
+class toyota extends car{
+    function carInfo(){
+        echo "<br>I'm from toyota child class<br>";
+    }
+}
+
+class Bike{
+     function bikeInfo(){
+         echo "<br>I'm from Bike class<br>";
+     }
+}
+
 echo "<h3>Abstract class example:</h3>";
 
 # create object
 $audiObject=new audi();
 $audiObject->carInfo();
+
+# create object
+$audiObject=new volvo();
+$audiObject->carInfo();
+
+# create object
+$audiObject=new toyota();
+$audiObject->carInfo();
+
+# create object
+$bikeObject=new Bike();
+$bikeObject->bikeInfo();
+
+
 
