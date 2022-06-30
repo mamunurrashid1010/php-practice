@@ -15,9 +15,31 @@ interface car{
 # implement interface in child class
 class bmw implements car{
     public function carInfo(){
-        echo "I'm from BMW child class";
+        echo "I'm from BMW child class<br>";
+    }
+}
+
+# implement interface in child class
+class toyota implements car{
+    public function carInfo(){
+        echo "I'm from toyota toyota class<br>";
+    }
+}
+
+# implement interface in child class
+class volvo implements car{
+    public function carInfo(){
+        echo "I'm from volvo class";
     }
 }
 
 $bmwObj=new bmw();
 $bmwObj->carInfo();
+
+# create toyota class object.
+$toyotaObj=new toyota();
+$toyotaObj->carInfo();
+
+# create volvo class object.
+$volvoObj=new volvo();
+$volvoObj->carInfo();
