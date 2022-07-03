@@ -36,3 +36,15 @@ class owner{
 
 # class instance
 new owner();
+
+
+echo "-------------------------- Example-3 --------------------------------------";
+# class
+class message{
+    public static function todayMessage(){
+        # owner class, static method access
+        owner::ownerName();
+        echo "This is test message<br>";
+    }
+}
+message::todayMessage();
