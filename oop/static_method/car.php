@@ -48,3 +48,23 @@ class message{
     }
 }
 message::todayMessage();
+
+
+echo "-------------------------- Example-4 --------------------------------------";
+# class
+class domain {
+    protected static function getWebsiteName() {
+        return "<br>www.example.com<br>";
+    }
+}
+
+# child class inherit parent class
+class domainW3 extends domain {
+    public $websiteName;
+    public function __construct() {
+        $this->websiteName = parent::getWebsiteName();
+    }
+}
+
+$domainW3 = new domainW3();
+echo $domainW3 -> websiteName;
