@@ -1,6 +1,11 @@
 <?php
 /*
  * This is example of array operation using php build-in function.
+ * Array operation build in function
+    1. count()          :array length count
+    2. array_push()     :add element to array
+    3. array_pop()      :remove last element to array
+    4. array_keys()     :array key get
  */
 
 class arrayOperation{
@@ -38,6 +43,13 @@ class arrayOperation{
         array_pop($this->arr);
         echo "<br>";
     }
+
+    # array key
+    function arrayKey(){
+        echo "Array Key:<br>";
+        var_dump(array_keys($this->arr));
+        echo "<br><br>";
+    }
 }
 
 # class instance create
@@ -58,3 +70,6 @@ $obj->printArray();
 # pop/delete last element of the array
 $obj->lastElementDelete();
 $obj->printArray();
+
+# array key get
+$obj->arrayKey();
