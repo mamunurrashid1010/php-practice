@@ -50,6 +50,15 @@ class arrayOperation{
         var_dump(array_keys($this->arr));
         echo "<br><br>";
     }
+
+    # add one or more array into one array
+    function addArray(){
+        $a1=[4,5];
+        $a2=[8,9];
+        echo "add one or more array into one array:<br>";
+        print_r(array_merge($a1,$a2));
+        echo "<br><br>";
+    }
 }
 
 # class instance create
@@ -73,3 +82,6 @@ $obj->printArray();
 
 # array key get
 $obj->arrayKey();
+
+# add one or more array into one array
+$obj->addArray();
