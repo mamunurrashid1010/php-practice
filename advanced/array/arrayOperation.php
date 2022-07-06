@@ -6,6 +6,8 @@
     2. array_push()     :add element to array
     3. array_pop()      :remove last element to array
     4. array_keys()     :array key get
+    5. array_merge()    :add one or more array into one array
+    6. array_reverse()  :reverse an array
  */
 
 class arrayOperation{
@@ -59,6 +61,15 @@ class arrayOperation{
         print_r(array_merge($a1,$a2));
         echo "<br><br>";
     }
+
+    # reverse array
+    function reverseArray(){
+        $a1=[1,2,3,4,5];
+        echo "Reverse array:<br>";
+        echo "[1,2,3,4,5]<br>";
+        print_r(array_reverse($a1));
+        echo "<br><br>";
+    }
 }
 
 # class instance create
@@ -85,3 +96,6 @@ $obj->arrayKey();
 
 # add one or more array into one array
 $obj->addArray();
+
+# reverse array
+$obj->reverseArray();
