@@ -16,3 +16,8 @@
     echo "day of the week (7,7,2022):<br>";
     $jd=gregoriantojd(7,7,2022);
     echo jddayofweek($jd,1)."<br><br>";
+
+    # month name
+    echo "month (7,7,2022):<br>";
+    $jd=gregoriantojd(3,13,2010);
+    echo jdmonthname($jd,0);
