@@ -13,3 +13,9 @@
 
     # get time
     echo "Time : ". date('h:i:s A')."<br>";
+
+    # get today day
+    echo "Today Day is: ". date('l')."<br>";
+
+    # number of day of a given month
+    echo "Number of day this month: ". date('t')."<br>";
