@@ -19,3 +19,6 @@
 
     # number of day of a given month
     echo "Number of day this month: ". date('t')."<br>";
+
+
+    echo localtime();
