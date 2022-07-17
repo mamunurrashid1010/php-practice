@@ -41,5 +41,11 @@
 
     # fgets(), 	Returns a line from an open file
     $file = fopen("testFile.txt","r");
-    echo fgets($file)."<br>";
+    echo fgets($file)."<br><br>";
     fclose($file);
+
+    # file_exists(),	Checks whether or not a file or directory exists
+    echo file_exists('testFile.txt')."<br><br>";
+
+    # Reads a file into a string
+    echo file_get_contents('testFile.txt')."<br>";
