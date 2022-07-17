@@ -33,3 +33,13 @@
 
     # file close
     fclose($file);
+
+    # fgetc(), Returns a single character from an open file
+    $file = fopen("testFile.txt","r");
+    echo fgetc($file)."<br>";
+    fclose($file);
+
+    # fgets(), 	Returns a line from an open file
+    $file = fopen("testFile.txt","r");
+    echo fgets($file)."<br>";
+    fclose($file);
