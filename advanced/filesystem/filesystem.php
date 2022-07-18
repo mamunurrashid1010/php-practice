@@ -52,3 +52,9 @@
 
     # get file size
     echo "file size: ". filesize('testFile.txt')."<br>";
+
+    # return file type
+    echo "file type: ".filetype('testFile.txt')."<br>";
+
+    # rename file
+    //echo rename('testFile1.txt','testFile.txt')."<br>";
