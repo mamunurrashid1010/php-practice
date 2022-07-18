@@ -47,5 +47,8 @@
     # file_exists(),	Checks whether or not a file or directory exists
     echo file_exists('testFile.txt')."<br><br>";
 
-    # Reads a file into a string
-    echo file_get_contents('testFile.txt')."<br>";
+    # write data to a file
+    echo file_put_contents('testFile.txt','This line to be added')."<br>";
+
+    # get file size
+    echo "file size: ". filesize('testFile.txt')."<br>";
