@@ -61,3 +61,7 @@
 
     # delete a file
     unlink("test2.txt");
+
+    # create a directory
+    echo "<br>Create a directory<br>";
+    mkdir("test_directory");
