@@ -58,3 +58,6 @@
 
     # rename file
     //echo rename('testFile1.txt','testFile.txt')."<br>";
+
+    # delete a file
+    unlink("test2.txt");
