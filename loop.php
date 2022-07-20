@@ -42,6 +42,13 @@
             echo "position $key value is: $color <br>";
         }
 
+        # foreach loop associative array
+        echo "<h4>foreach loop(associative array):</h4>";
+        $marks = ["id"=>10, "Name"=>"hasan", "Marks"=>80];
+        foreach ($marks as $key=>$mark) {
+            echo " $key : $mark <br>";
+        }
+
     ?>
 
 </body>
