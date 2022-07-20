@@ -60,7 +60,7 @@
     //echo rename('testFile1.txt','testFile.txt')."<br>";
 
     # delete a file
-    unlink("test2.txt");
+    //unlink("test2.txt");
 
     # create a directory
     echo "<br>Create a directory<br>";
