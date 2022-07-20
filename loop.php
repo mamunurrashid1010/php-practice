@@ -44,9 +44,15 @@
 
         # foreach loop associative array
         echo "<h4>foreach loop(associative array):</h4>";
-        $marks = ["id"=>10, "Name"=>"hasan", "Marks"=>80];
+        $marks = [
+                    ["id"=>10, "Name"=>"hasan", "Marks"=>80],
+                    ["id"=>11, "Name"=>"Robel", "Marks"=>65],
+                ];
         foreach ($marks as $key=>$mark) {
-            echo " $key : $mark <br>";
+            foreach($mark as $key1=>$m){
+                echo " $key1 : $m <br>";
+            }
+            echo "<br>";
         }
 
     ?>
