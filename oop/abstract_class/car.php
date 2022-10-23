@@ -33,6 +33,13 @@ class toyota extends car{
     }
 }
 
+# child class
+class bmw extends car{
+    function carInfo(){
+        echo "<br>I'm from BMW child class<br>";
+    }
+}
+
 class Bike{
      function bikeInfo(){
          echo "<br>I'm from Bike class<br>";
@@ -52,6 +59,10 @@ $audiObject->carInfo();
 # create object
 $audiObject=new toyota();
 $audiObject->carInfo();
+
+# create object
+$bmwObject=new bmw();
+$bmwObject->carInfo();
 
 # create object
 $bikeObject=new Bike();
