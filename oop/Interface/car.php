@@ -33,6 +33,13 @@ class volvo implements car{
     }
 }
 
+# implement interface in child class
+class audi implements car{
+    public function carInfo(){
+        echo "I'm from audi class";
+    }
+}
+
 $bmwObj=new bmw();
 $bmwObj->carInfo();
 
@@ -43,3 +50,7 @@ $toyotaObj->carInfo();
 # create volvo class object.
 $volvoObj=new volvo();
 $volvoObj->carInfo();
+
+# create audi class object.
+$audiObj=new audi();
+$audiObj->carInfo();
