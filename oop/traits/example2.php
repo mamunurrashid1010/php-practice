@@ -23,10 +23,18 @@ trait employee{
     }
 }
 
+#trait
+trait notification{
+    public function sentNotification(){
+        echo "Notification send success.<br>";
+    }
+}
+
 # class
 class welcome{
     use message;
     use employee;
+    use notification;
     public function test(){
         $this->adminMessage();
     }
@@ -39,4 +47,5 @@ $obj=new welcome();
 $obj->test();
 # method-2
 $obj->softwareDeveloperList();
+$obj->sentNotification();
 
