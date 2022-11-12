@@ -30,11 +30,22 @@ trait notification{
     }
 }
 
+# trait
+trait subscription{
+    public function package(){
+        return "Monthly/100 USD";
+    }
+    public function expirationDate(){
+        return "2023-12-15";
+    }
+}
+
 # class
 class welcome{
     use message;
     use employee;
     use notification;
+    use subscription;
     public function test(){
         $this->adminMessage();
     }
@@ -48,4 +59,8 @@ $obj->test();
 # method-2
 $obj->softwareDeveloperList();
 $obj->sentNotification();
+
+echo "<br>Subscription Details:";
+echo "<br>Subscription Package: " .$obj->package();
+echo "<br>Subscription Expiration Date: " .$obj->expirationDate();
 
